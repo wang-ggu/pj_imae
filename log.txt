@@ -1,4 +1,4 @@
-2025-03-18 06:19:39 UTC
+2025-03-18 06:20:54 UTC
 macOS-15.3.1-arm64-arm-64bit
 Ren'Py 8.3.6.25022803
 
@@ -29,7 +29,7 @@ Prepare screens took 0.02s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.01s
 Running _start took 0.00s
-Interface start took 0.19s
+Interface start took 0.16s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1470, 956)
@@ -41,19 +41,10 @@ Version: b'2.1 Metal - 89.3'
 Display Info: None
 Screen sizes: virtual=(800, 600) physical=(800, 600) drawable=(1600, 1200)
 Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 15, in script
-    하비 "청! 똑바로 안 싸울래?!"
-  File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/ast.py", line 2586, in execute
-    Say.execute(self)
-  File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/ast.py", line 583, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/ast.py", line 472, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer '하비' is not defined.
-
-While running game code:
-  File "game/script.rpy", line 15, in script
-    하비 "청! 똑바로 안 싸울래?!"
-Exception: Sayer '하비' is not defined.
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
