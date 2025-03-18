@@ -1,8 +1,8 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 24, in script
-    하비 "청! 똑바로 안 싸울래?!"
+  File "game/script.rpy", line 25, in script
+    자청 "옙! 똑바로 싸우고 있습니다!"
   File "renpy/common/00action_menu.rpy", line 271, in __call__
     layout.yesno_screen(layout.QUIT, Quit(False))
   File "renpy/common/00layout.rpy", line 516, in yesno_screen
@@ -14,8 +14,8 @@ AttributeError: 'Layout' object has no attribute 'yesno_prompt'
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 24, in script
-    하비 "청! 똑바로 안 싸울래?!"
+  File "game/script.rpy", line 25, in script
+    자청 "옙! 똑바로 싸우고 있습니다!"
   File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/ast.py", line 2586, in execute
     Say.execute(self)
   File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/ast.py", line 623, in execute
@@ -51,4 +51,4 @@ AttributeError: 'Layout' object has no attribute 'yesno_prompt'
 macOS-15.3.1-arm64-arm-64bit arm64
 Ren'Py 8.3.6.25022803
  
-Tue Mar 18 15:24:56 2025
+Tue Mar 18 15:26:06 2025

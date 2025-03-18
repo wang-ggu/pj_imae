@@ -1,6 +1,8 @@
-define gui.text_font = "fonts/NanumGothic.ttf"
-define gui.name_text_font = "fonts/NanumGothic.ttf"
-define gui.interface_text_font = "fonts/NanumGothic.ttf"
+init python:
+    style.default.font = "fonts/NanumGothic.ttf"
+    style.say_dialogue.font = "fonts/NanumGothic.ttf"
+    style.say_label.font = "fonts/NanumGothic.ttf"
+    style.say_thought.font = "fonts/NanumGothic.ttf"
 
 define 하비 = Character('하비')
 define 자청 = Character('자청')

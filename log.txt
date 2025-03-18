@@ -1,10 +1,10 @@
-2025-03-18 06:23:40 UTC
+2025-03-18 06:25:21 UTC
 macOS-15.3.1-arm64-arm-64bit
 Ren'Py 8.3.6.25022803
 
 Early init took 0.02s
 Loading error handling took 0.01s
-Loading script took 0.07s
+Loading script took 0.06s
 Loading save slot metadata took 0.01s
 Loading persistent took 0.00s
 Running init code took 0.02s
@@ -43,8 +43,8 @@ Screen sizes: virtual=(800, 600) physical=(800, 600) drawable=(1600, 1200)
 Maximum texture size: 4096x4096
 
 Full traceback:
-  File "game/script.rpy", line 24, in script
-    하비 "청! 똑바로 안 싸울래?!"
+  File "game/script.rpy", line 25, in script
+    자청 "옙! 똑바로 싸우고 있습니다!"
   File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/ast.py", line 2586, in execute
     Say.execute(self)
   File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/ast.py", line 623, in execute
@@ -78,16 +78,12 @@ Full traceback:
 AttributeError: 'Layout' object has no attribute 'yesno_prompt'
 
 While running game code:
-  File "game/script.rpy", line 24, in script
-    하비 "청! 똑바로 안 싸울래?!"
+  File "game/script.rpy", line 25, in script
+    자청 "옙! 똑바로 싸우고 있습니다!"
   File "renpy/common/00action_menu.rpy", line 271, in __call__
     layout.yesno_screen(layout.QUIT, Quit(False))
   File "renpy/common/00layout.rpy", line 516, in yesno_screen
     elif renpy.invoke_in_new_context(layout.invoke_yesno_prompt, None, message):
-  File "renpy/common/00layout.rpy", line 472, in invoke_yesno_prompt
-    rv = layout.yesno_prompt(*args)
-AttributeError: 'Layout' object has no attribute 'yesno_prompt'
-.invoke_yesno_prompt, None, message):
   File "renpy/common/00layout.rpy", line 472, in invoke_yesno_prompt
     rv = layout.yesno_prompt(*args)
 AttributeError: 'Layout' object has no attribute 'yesno_prompt'
