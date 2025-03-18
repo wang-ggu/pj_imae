@@ -1,4 +1,7 @@
 define gui.text_font = "fonts/NanumGothic.ttf"
+define gui.name_text_font = "fonts/NanumGothic.ttf"
+define gui.interface_text_font = "fonts/NanumGothic.ttf"
+
 define 하비 = Character('하비')
 define 자청 = Character('자청')
 define 남강 = Character('남강')
