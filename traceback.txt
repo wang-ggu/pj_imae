@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 5, in script
+    with flash
+  File "game/script.rpy", line 5, in <module>
+    with flash
+NameError: name 'flash' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 5, in script
+    with flash
+  File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/ast.py", line 1367, in execute
+    trans = renpy.python.py_eval(self.expr)
+  File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/python.py", line 1215, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/python.py", line 1208, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 5, in <module>
+    with flash
+NameError: name 'flash' is not defined
+
+macOS-15.3.1-arm64-arm-64bit arm64
+Ren'Py 8.3.6.25022803
+ 
+Tue Mar 18 15:17:48 2025

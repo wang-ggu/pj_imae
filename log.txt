@@ -1,0 +1,62 @@
+2025-03-18 06:17:48 UTC
+macOS-15.3.1-arm64-arm-64bit
+Ren'Py 8.3.6.25022803
+
+Early init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.04s
+Loading save slot metadata took 0.00s
+Loading persistent took 0.00s
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.00s
+Index archives took 0.00s
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.01s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.01s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.02s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.18s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M2'
+Version: b'2.1 Metal - 89.3'
+Display Info: None
+Screen sizes: virtual=(800, 600) physical=(800, 600) drawable=(1600, 1200)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 5, in script
+    with flash
+  File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/ast.py", line 1367, in execute
+    trans = renpy.python.py_eval(self.expr)
+  File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/python.py", line 1215, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/python.py", line 1208, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 5, in <module>
+    with flash
+NameError: name 'flash' is not defined
+
+While running game code:
+  File "game/script.rpy", line 5, in script
+    with flash
+  File "game/script.rpy", line 5, in <module>
+    with flash
+NameError: name 'flash' is not defined

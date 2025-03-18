@@ -2,7 +2,7 @@ label start:
 
     scene black
     play sound "sword_clash.ogg"
-    with flash
+    with dissolve  # flash 대신 dissolve 효과 사용 (렌파이 기본 지원)
     # 칼 부딪치는 소리와 화면 깜빡임 반복 (여러 번)
 
     play sound "big_boom.ogg"
@@ -42,7 +42,7 @@ label start:
     하비 "시끄러워! 저 녀석 회복하기 전에 얼른 끝내버리자."
     자청 "옙! 바로 살풀이 작업 들어가겠습니다! 쿵짝짝, 쿵짝짝…."
 
-    scene black with shake
+    scene black with dissolve
     play sound "speaker_break.ogg"
     show 남강 가면클로즈업
 
@@ -84,3 +84,4 @@ label start:
     자청 "젠장…! 비야…! 정신 차려, 비야…!"
 
     return
+
