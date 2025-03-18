@@ -1,17 +1,18 @@
-2025-03-18 06:17:48 UTC
+2025-03-18 06:19:39 UTC
 macOS-15.3.1-arm64-arm-64bit
 Ren'Py 8.3.6.25022803
 
-Early init took 0.02s
+Early init took 0.03s
 Loading error handling took 0.01s
-Loading script took 0.04s
+Loading script took 0.07s
 Loading save slot metadata took 0.00s
 Loading persistent took 0.00s
-Running init code took 0.01s
+Running init code took 0.02s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.00s
 Index archives took 0.00s
+Backing up script files to '/Users/sojian/Library/RenPy/backups/pj_imae':
 Dump and make backups took 0.02s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
@@ -21,14 +22,14 @@ Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.01s
 Build styles took 0.00s
-Load screen analysis took 0.01s
+Load screen analysis took 0.00s
 Analyze screens took 0.00s
-Save screen analysis took 0.00s
+Save screen analysis took 0.01s
 Prepare screens took 0.02s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.01s
 Running _start took 0.00s
-Interface start took 0.18s
+Interface start took 0.19s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1470, 956)
@@ -42,21 +43,17 @@ Screen sizes: virtual=(800, 600) physical=(800, 600) drawable=(1600, 1200)
 Maximum texture size: 4096x4096
 
 Full traceback:
-  File "game/script.rpy", line 5, in script
-    with flash
-  File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/ast.py", line 1367, in execute
-    trans = renpy.python.py_eval(self.expr)
-  File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/python.py", line 1215, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/python.py", line 1208, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 5, in <module>
-    with flash
-NameError: name 'flash' is not defined
+  File "game/script.rpy", line 15, in script
+    하비 "청! 똑바로 안 싸울래?!"
+  File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/ast.py", line 2586, in execute
+    Say.execute(self)
+  File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/ast.py", line 583, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/ast.py", line 472, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer '하비' is not defined.
 
 While running game code:
-  File "game/script.rpy", line 5, in script
-    with flash
-  File "game/script.rpy", line 5, in <module>
-    with flash
-NameError: name 'flash' is not defined
+  File "game/script.rpy", line 15, in script
+    하비 "청! 똑바로 안 싸울래?!"
+Exception: Sayer '하비' is not defined.

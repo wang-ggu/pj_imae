@@ -1,3 +1,8 @@
+define 하비 = Character('하비')
+define 자청 = Character('자청')
+define 남강 = Character('남강')
+define 만인혈석 = Character('만인혈석')
+
 label start:
 
     scene black

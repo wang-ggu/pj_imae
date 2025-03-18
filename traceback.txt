@@ -1,28 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 5, in script
-    with flash
-  File "game/script.rpy", line 5, in <module>
-    with flash
-NameError: name 'flash' is not defined
+  File "game/script.rpy", line 15, in script
+    하비 "청! 똑바로 안 싸울래?!"
+Exception: Sayer '하비' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 5, in script
-    with flash
-  File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/ast.py", line 1367, in execute
-    trans = renpy.python.py_eval(self.expr)
-  File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/python.py", line 1215, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/python.py", line 1208, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 5, in <module>
-    with flash
-NameError: name 'flash' is not defined
+  File "game/script.rpy", line 15, in script
+    하비 "청! 똑바로 안 싸울래?!"
+  File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/ast.py", line 2586, in execute
+    Say.execute(self)
+  File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/ast.py", line 583, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "/Users/sojian/Desktop/renpy-8.3.6-sdk/renpy/ast.py", line 472, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer '하비' is not defined.
 
 macOS-15.3.1-arm64-arm-64bit arm64
 Ren'Py 8.3.6.25022803
  
-Tue Mar 18 15:17:48 2025
+Tue Mar 18 15:19:42 2025
